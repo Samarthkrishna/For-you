@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find the Message 💜</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header>
+    <h1><i class="fas fa-search-heart"></i> A Scavenger Hunt for You</h1>
+    <p class="subtitle">Find the 5 hidden items to reveal my message...</p>
+    <div class="counter">Found: <span id="foundCount">0</span>/5</div>
+  </header>
+
+  <!-- Hidden Items -->
+  <div class="hunt-area">
+    <div class="item" data-id="1"><i class="fas fa-key"></i></div>
+    <div class="item" data-id="2"><i class="fas fa-heart"></i></div>
+    <div class="item" data-id="3"><i class="fas fa-star"></i></div>
+    <div class="item" data-id="4"><i class="fas fa-gem"></i></div>
+    <div class="item" data-id="5"><i class="fas fa-music"></i></div>
+  </div>
+
+  <!-- Message Board -->
+  <div class="message-board">
+    <h2><i class="fas fa-scroll"></i> Message Fragments</h2>
+    <div class="fragments">
+      <div class="fragment">Every moment with you...</div>
+      <div class="fragment">...feels like a special treasure.</div>
+      <div class="fragment">You make ordinary days...</div>
+      <div class="fragment">...shine brighter than stars.</div>
+      <div class="fragment">This song is my heart.</div>
+    </div>
+  </div>
+
+  <!-- ❤️ FINAL REVEAL -->
+  <div id="finalReveal" class="final-reveal">
+    <h2><i class="fas fa-gift"></i> For You</h2>
+
+    <p class="final-text">
+      Every moment with you feels like magic.  
+      This video holds everything I can’t say in words. 💜
+    </p>
+
+    <!-- 🎥 YOUR VIDEO SONG -->
+    <div class="video-wrapper">
+      <video controls autoplay playsinline>
+        <source src="song.mp4" type="video/mp4">
+        Your browser does not support the video.
+      </video>
+    </div>
+
+    <button id="replayBtn">Play Again</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
